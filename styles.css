@@ -30,9 +30,11 @@ body {
     background-color: #12113e;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .board .square {
+    cursor: pointer;
     font-family: 'Architects Daughter', cursive;
     border: solid white 1px;
     display: flex;
