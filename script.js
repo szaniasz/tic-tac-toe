@@ -1,11 +1,12 @@
 const boardGame = (function(){
     const board = [
-        ['x','','x'],
-        ['x','','x'],
-        ['','x','o']
+        ['X','','X'],
+        ['X','','X'],
+        ['','X','O']
     ]
-    const displayBoard = function() {
-        const squares = document.querySelectorAll('.square')
+    const squares = document.querySelectorAll('.square')
+    // const squaresArray = [...squares]
+    const displayBoard = function() {   
         let squareNumber = 0
         for (let i = 0; i < board.length; i++) {
             for (let j = 0; j < this.board[i].length; j++) {
@@ -14,12 +15,18 @@ const boardGame = (function(){
             }
         }
     }
+    
     return {
         board, 
-        displayBoard}
+        displayBoard
+    }
 })()
-
+// boardGame.squares.forEach((square) => {
+//     square.addEventListener('click', console.log('elo'))
+// })
 boardGame.displayBoard()
+
+
 
 
 
