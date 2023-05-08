@@ -7,7 +7,8 @@
 }
 body {
     font-family: Roboto, Arial, sans-serif;
-    color: #232323;
+    font-weight: 300;
+    color: #ffffff;
     background-color: #1c2d53;
     display: grid;
     justify-content: center;
@@ -16,21 +17,25 @@ body {
 }
 .stats {
     margin-top: 50px;
+    margin-bottom: 50px;
     background-color: #12113e;
     width: 500px;
     height: 140px;
     border: solid white 1px;
 }
 .board {
-    margin: auto 0;
     height: 500px;
     width: 500px;
     background-color: #12113e;
-    line-height: 300px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .board .square {
     border: solid white 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    text-align: center;
 }
