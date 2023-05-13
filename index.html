@@ -11,7 +11,13 @@
 <body>
     <div>
         <div class="stats">
-
+            <div class="txt">
+                <h1>Your turn <span id="player-name">Player 1</span> (<span id="mark">X</span>)</h1>
+                <div id="players">
+                    <h1><span id="player1" contenteditable="true">Player 1</span>: <span id="player1result">0</span></h1>
+                    <h1><span id="player2" contenteditable="true">Player 2</span>: <span id="player2result">0</span></h1>
+                </div>
+            </div>
         </div>
         <div class="board">
             <div class="square" id="game0-0">></div>
@@ -25,5 +31,15 @@
             <div class="square" id="game2-2"></div>
         </div>
     </div>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <h1>The winner is</h1>
+            <h1 class="modal-winner">Player 1</h1>
+        </div>
+        <div class="modal-body">
+            <button data-modal-button class="modal-button">Play again</button>
+        </div>
+    </div>
+    <div id="overlay"></div>
 </body>
 </html>
