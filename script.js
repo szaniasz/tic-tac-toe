@@ -115,7 +115,7 @@ const boardGame = (function(){
     const restartButton = document.getElementById('restart')
 
     restartButton.addEventListener(('click'), function(){
-        if (window.confirm("Are your sure? It can't be undone")) {
+        if (window.confirm("Are your sure? This action cannot be undone")) {
             restartGame()
             displayBoard()
             player1Result.innerText = 0
