@@ -12,20 +12,28 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
     color: #ffffff;
-    background-color: #4b608b;
+    background-color: #c5c3c6;
     display: grid;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 35px;
+}
+
+#instruction {
+    color: #46494b;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 .stats {
     margin-top: 50px;
-    margin-bottom: 50px;
-    
-    background-color: #12113e;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #667887;
     width: 500px;
     height: 140px;
-    border: solid white 1px;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -45,7 +53,7 @@ body {
 .board {
     height: 500px;
     width: 500px;
-    background-color: #12113e;
+    background-color: #ededee;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -54,14 +62,32 @@ body {
 .board .square {
     cursor: pointer;
     font-family: 'Architects Daughter', cursive;
-    border: solid white 1px;
+    border: solid #46494b 1px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 110px;
     text-align: center;
+    color: #46494b;
+}
+.board .square:hover{
+    background-color: #d3d7db;
+}
+#restart {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: auto;
+    position: relative;
+    top: 0;
+    transition: 0.5s ease-in-out;
 }
 
+#restart:hover{
+    top: 3px;
+}
 .modal {
     position: fixed;
     top: 50%;
