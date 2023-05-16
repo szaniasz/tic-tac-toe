@@ -25,7 +25,6 @@ const boardGame = (function(){
             changeMark(player)
             updateMarkText(mark, player)
         } else {
-            alert("You can't change the value")
             return
         }
       })
