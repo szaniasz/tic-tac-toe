@@ -5,7 +5,6 @@ const boardGame = (function(){
         ['','','']
     ]
     const squares = document.querySelectorAll('.square')
-    // const squaresArray = [...squares]
     const displayBoard = function() {   
         let squareNumber = 0
         for (let i = 0; i < boardGame.board.length; i++) {
